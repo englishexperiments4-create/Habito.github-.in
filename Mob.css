@@ -1,0 +1,275 @@
+body {
+
+  font-family: Arial, sans-serif;
+
+  background: #f4f6f8;
+
+  display: flex;
+
+  justify-content: center;
+
+  padding: 20px;
+
+}
+
+.container {
+
+  max-width: 1100px;
+
+  width: 100%;
+
+}
+
+/* Banner */
+
+.banner {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  background: #4caf50;
+
+  color: white;
+
+  padding: 12px 18px;
+
+  border-radius: 12px;
+
+  margin-bottom: 20px;
+
+}
+
+.banner-right {
+
+  display: flex;
+
+  gap: 10px;
+
+}
+
+.banner-right input {
+
+  padding: 8px;
+
+  border-radius: 8px;
+
+  border: none;
+
+}
+
+.banner-right button {
+
+  background: white;
+
+  color: #4caf50;
+
+  border: none;
+
+  border-radius: 8px;
+
+  padding: 8px 12px;
+
+  cursor: pointer;
+
+}
+
+/* Habit Card */
+
+.habit-card {
+
+  background: #fff;
+
+  border-radius: 12px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+  padding: 16px;
+
+  margin-bottom: 20px;
+
+}
+
+.habit-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+}
+
+.habit-title {
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+}
+
+.remove-btn {
+
+  background: crimson;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 8px;
+
+  padding: 4px 8px;
+
+  cursor: pointer;
+
+}
+
+/* Progress bar + streak */
+
+.progress-container {
+
+  margin: 10px 0;
+
+}
+
+.progress-bar {
+
+  background: #e0e0e0;
+
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  height: 14px;
+
+}
+
+.progress-fill {
+
+  background: #4caf50;
+
+  height: 100%;
+
+  width: 0%;
+
+  transition: width 0.3s ease;
+
+}
+
+.streak {
+
+  margin-top: 6px;
+
+  font-size: 14px;
+
+  color: #333;
+
+}
+
+/* Calendar */
+
+.calendar-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin: 8px 0;
+
+}
+
+.calendar-header button {
+
+  background: #4caf50;
+
+  color: white;
+
+  border: none;
+
+  padding: 4px 10px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+}
+
+.weekdays {
+
+  display: grid;
+
+  grid-template-columns: repeat(7, 1fr);
+
+  text-align: center;
+
+  font-weight: bold;
+
+  margin-bottom: 5px;
+
+}
+
+.calendar {
+
+  display: grid;
+
+  grid-template-columns: repeat(7, 1fr);
+
+  gap: 6px;
+
+}
+
+.day {
+
+  background: #eaeaea;
+
+  border-radius: 6px;
+
+  padding: 10px;
+
+  text-align: center;
+
+  cursor: pointer;
+
+}
+
+.day.done {
+
+  background: #4caf50;
+
+  color: white;
+
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+  .banner {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+  }
+
+  .banner-right {
+
+    width: 100%;
+
+  }
+
+  .banner-right input {
+
+    flex-grow: 1;
+
+    width: 100%;
+
+  }
+
+}
